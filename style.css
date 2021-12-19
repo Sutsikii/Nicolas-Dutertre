@@ -1,0 +1,254 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body  {
+    font-family: 'Arial' , sans-serif;
+}
+
+body::-webkit-scrollbar {
+    width: 1rem;
+}
+body::-webkit-scrollbar-track {
+    background: none;
+}
+body::-webkit-scrollbar-thumb {
+    background:rgb(73, 37, 138);
+}
+
+a:link {
+    text-decoration: none;
+}
+
+/** BARRE DE NAVIGATION **/
+nav {
+ /*   position: fixed;
+    width: 100%; */
+    background: #000;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+nav .mainMenu {
+    display: flex;
+    list-style: none;
+}
+nav .mainMenu li a {
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 1.5rem;
+}
+nav .mainMenu li a:hover {
+    background: rgb(255,94,0);
+}
+nav .openMenu {
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+}
+nav .mainMenu .closeMenu , .icons i {
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+}
+
+nav .logo {
+    margin: 6px;
+    font-size: 25px;
+}
+
+/** ICONE FAB COULEUR / TAILLE **/
+.fa-facebook:hover {color: rgb(0, 110, 255);}
+.fa-twitter:hover {color: rgb(86, 154, 243);}
+.fa-instagram:hover {color: rgb(163, 71, 238);}
+.fa-github:hover {color: rgb(255, 123, 0);}
+.fa-youtube:hover {color: rgb(255, 0, 0);}
+
+
+.fa-facebook {color: rgb(201, 201, 201);}
+.fa-twitter {color: rgb(201, 201, 201);}
+.fa-instagram {color: rgb(201, 201, 201);}
+.fa-github{color: rgb(201, 201, 201);}
+.fa-youtube{color: rgb(201, 201, 201);}
+
+/** RESPONSIVITE **/
+
+@media(max-width: 800px){
+    nav .mainMenu {
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #000;
+        transition: top 1s ease;
+        display: none;
+    }
+    nav .mainMenu .closeMenu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+
+    }
+    nav .openMenu {
+        display: block;
+    }
+    nav .mainMenu li a:hover {
+        background: none;
+        color: rgb(255, 123, 0);
+        font-size: 1.6rem;
+    }
+    .icons i {
+        display: inline-block;
+        padding: 12px;
+    }
+}
+
+img {width: 100%;}
+
+main {
+    height: calc(100vh - 80px);
+}
+
+/** ANIMATION TYPING **/
+.typing {
+    color:#FFF;
+    font-size: 3rem;
+}
+/** INDEX **/
+.profil-card {
+    max-width: 350px;
+    background: rgb(255, 255, 255);
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    text-align: center;
+    border-radius: 1rem;
+    overflow:hidden;
+    min-width: 150px;
+    min-height: 250px;
+}
+
+.profil {
+    display: flex;
+    width: 30rem;
+    height: 45rem;
+    min-height: 30vh;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    background: url('image/bg1.png');
+    background-size: cover;
+}
+
+.profil-card .social-media-profil-card i {
+    size: 1rem;
+}
+
+.profil h2 {
+    color:rgb(0, 0, 0)
+}
+
+.left-profil-card {
+    width: 30%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.right-profil-card {
+    width : 30%
+}
+
+.services {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50rem;
+    background: url('image/services_bg.jpg');
+    background-size: cover;
+
+}
+
+.services-cards-1 {
+   background: url('image/clavier-site-card.png');
+    background-size: cover; 
+    padding: 23rem 0 0;
+   margin: 0 2rem;
+   border-radius: 15px;
+   width: 30rem;
+   height: 35rem;
+   overflow: hidden;
+   min-width: 20rem;
+   transform: scale(1.00)
+}
+
+.services-cards-1:hover {
+    transform: scale(1.03)
+}
+
+.services-cards-2 {
+    background: url('image/peter-site-card.png');
+     background-size: cover; 
+     padding: 23rem 0 0;
+    margin: 0 2rem;
+    border-radius: 15px;
+    width: 30rem;
+   height: 35rem;
+    overflow: hidden;
+    min-width: 20rem;
+ }
+
+ .services-cards-2:hover {
+    transform: scale(1.03)
+}
+
+ .services-cards-3 {
+    background: url('image/pixel-art-lac.png');
+     background-size: cover; 
+     padding: 23rem 0 0;
+    margin: 0 2rem;
+    border-radius: 15px;
+    width: 30rem;
+   height: 35rem;
+    overflow: hidden;
+    min-width: 20rem;
+ }
+
+ .services-cards-3:hover {
+    transform: scale(1.03)
+}
+
+.services-cards-1 p, a, h2 {
+    color:rgb(255, 255, 255);
+    padding : 1rem;
+    
+}
+
+.services-cards-2 p, a, h2 {
+    color:rgb(255, 255, 255);
+    padding : 1rem;
+    
+}
+
+.services-cards-3 p, a, h2 {
+    color:rgb(255, 255, 255);
+    padding : 1rem;
+    
+}
+
+.services-cards-content {
+    padding: 1.5rem;
+    background: linear-gradient(hsl(0 0% 0% / 0), hsl(20 0% 0% / 0.3), hsl(0 0% 0% / 1));
+}
+
