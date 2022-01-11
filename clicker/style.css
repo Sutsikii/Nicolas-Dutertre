@@ -1,0 +1,92 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap');
+
+
+* {
+    color : white;
+    font-family: 'Arial' , sans-serif;
+}
+
+body {
+    background: url('images/lights-square-8k-fq-1920x1080.jpg')
+}
+
+.jeu { 
+    display: flex;
+    width: 300px; 
+    color : blue;   
+    padding : 10px;
+}
+
+
+.jeu button {
+    color : blue;   
+}
+
+.btn {
+        width: 150px;
+        height: 50px;
+        border: none;
+        border-radius: 5px;
+        font-size: 20px;
+        outline: none;
+        border: 3px solid 808000;
+        position: relative;
+        z-index: 1;
+        transform: scale(1);
+        transition-duration: 400ms;
+        background  : #00ccff;
+        
+    }
+    
+.btn:hover {
+        color: #fff;
+        cursor: pointer;
+        transform: scale(1.25);
+    }
+    
+.btn:before {
+        transition: 0.5s all ease;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        right: 50%;
+        bottom: 0;
+        opacity: 0;
+        content: "";
+
+    }
+    
+.btn:hover:before {
+        transition: 0.5s all ease;
+        left: 0;
+        right: 0;
+        opacity: 1;
+        z-index: -1;
+        border-radius: 20px;
+    }
+
+.bigclicker {
+    display: flex;
+    justify-content: space-evenly;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+    }
+
+.Shop {
+    background-color: #FF00FF ;
+    width:200px;
+    border-radius: 20px;
+    height: 150px;    
+    margin-top: 200px;
+    margin-left: auto ;
+    margin-right: auto ;
+}
+
+.Shop p {
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+}

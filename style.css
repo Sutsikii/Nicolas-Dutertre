@@ -2,7 +2,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-
 }
 
 body  {
@@ -20,10 +19,24 @@ body::-webkit-scrollbar-thumb {
 }
 
 a:link {
+    color: #fff;
     text-decoration: none;
 }
 
+a:visited {
+    color:#fff;
+}
+
 /** BARRE DE NAVIGATION **/
+
+
+.logo a:link {
+    color: #FFF;
+}
+.logo a:visited {
+    color: #FFF;
+}
+
 nav {
  /*   position: fixed;
     width: 100%; */
@@ -215,12 +228,12 @@ main {
 
  .services-cards-3 {
     background: url('image/pixel-art-lac.png');
-     background-size: cover; 
-     padding: 23rem 0 0;
+    background-size: cover; 
+    padding: 23rem 0 0;
     margin: 0 2rem;
     border-radius: 15px;
     width: 30rem;
-   height: 35rem;
+    height: 35rem;
     overflow: hidden;
     min-width: 20rem;
  }
@@ -229,22 +242,30 @@ main {
     transform: scale(1.03)
 }
 
-.services-cards-1 p, a, h2 {
+.services-cards-1 .services-cards-text  {
     color:rgb(255, 255, 255);
-    padding : 1rem;
-    
+    padding-top : 3rem;
+    padding-bottom: 3rem;
 }
 
-.services-cards-2 p, a, h2 {
+.services-cards-2 .services-cards-text {
     color:rgb(255, 255, 255);
-    padding : 1rem;
-    
+    padding-top : 2rem;
+    padding-bottom: 2rem;
 }
 
-.services-cards-3 p, a, h2 {
+.services-cards-3 .services-cards-text {
     color:rgb(255, 255, 255);
-    padding : 1rem;
-    
+    padding-top : 2rem;
+    padding-bottom: 2rem;
+}
+
+.button-card {
+    color:rgb(255, 255, 255);
+}
+
+.services-cards-title {
+    color:rgb(255, 255, 255);
 }
 
 .services-cards-content {
@@ -252,3 +273,238 @@ main {
     background: linear-gradient(hsl(0 0% 0% / 0), hsl(20 0% 0% / 0.3), hsl(0 0% 0% / 1));
 }
 
+/** GALERIE **/ 
+
+.photographie-main {
+    background-image: url("image/guirlande.JPG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.wrapper-galerie {
+    padding : 3% 10vw;
+}
+
+#index-galerie {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 10px;
+    grid-template-areas:
+    "galerie-h2 galerie-h2 galerie-h2 galerie-h2"
+    "img1 img2 img3 img4"
+    "img5 img6 img7 img8"
+}
+
+#index-galerie .galerie-img {
+    width: 100%;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+
+.galerie-img div {
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0;;
+}
+
+.galerie-img div:hover {
+    opacity: 0.8;
+    transition: all ease-in-out;
+}
+
+/** GALERIE IMAGE **/ 
+
+#index-galerie h2 {
+    grid-area: galerie-h2;
+}
+
+#index-galerie .img1 {
+    grid-area: img1;
+    background-image: url("image/peter-site-card.png");
+}
+
+#index-galerie .img2 {
+    grid-area: img2;
+    background-image: url("image/galerie/Arbre_fleuris.jpg");
+}
+
+#index-galerie .img3 {
+    grid-area: img3;
+    background-image: url("image/galerie/ARJ.jpg");
+}
+
+#index-galerie .img4 {
+    grid-area: img4;
+    background-image: url("image/galerie/Champs_Arrière.JPG");
+}
+
+#index-galerie .img5 {
+    grid-area: img5;
+    background-image: url("image/galerie/Forêt_Plateau_Est.jpg");
+}
+
+#index-galerie .img6 {
+    grid-area: img6;
+    background-image: url("image/galerie/Clavier\ Roccat\ [R].jpg");
+}
+
+#index-galerie .img7 {
+    grid-area: img7;
+    background-image: url("image/services_bg.jpg");
+}
+
+#index-galerie .img8 {
+    grid-area: img8;
+    background-image: url("image/galerie/Cathédrale\ Jour.jpg");
+}
+
+/** ART **/ 
+
+.art-main {
+    background-image: url("image/Art/landscape\ rose.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.wrapper-art{
+    padding : 3% 10vw;
+}
+
+#index-art {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 10px;
+    grid-template-areas:
+    "galerie-h2 galerie-h2 galerie-h2 galerie-h2"
+    "art1 art2 art3 art4"
+    "art5 art6 art7 art8"
+}
+
+#index-art .art-img {
+    width: 100%;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+
+.art-img div {
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0;
+}
+
+.art-img div:hover {
+    opacity: 0.8;
+    transition: all ease-in-out;
+}
+
+
+/** ART IMAGE **/ 
+
+#index-art h2 {
+    grid-area: galerie-h2;
+}
+
+#index-art .art1 {
+    grid-area: art1;
+    background-image: url("image/Art/Bloc_O.png");
+}
+
+#index-art .art2 {
+    grid-area: art2;
+    background-image: url("image/Art/Entrepot_ST-export.png");
+}
+
+#index-art .art3 {
+    grid-area: art3;
+    background-image: url("image/Art/Gameboy.png");
+}
+
+#index-art .art4 {
+    grid-area: art4;
+    background-image: url("image/Art/gameboy_bleu_animated.gif");
+}
+
+#index-art .art5 {
+    grid-area: art5;
+    background-image: url("image/Art/Kingdom_LAC_FINAL_ST.png");
+}
+
+
+
+/*** Portfolio GRID ***/ 
+
+.main-portfolio {
+    background-image : url('image/Portfolio/photo-1584949091598-c31daaaa4aa9.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.wrapper-portfolio {
+    padding : 3% 10vw;
+}
+
+#index-portfolio {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 10px;
+    grid-template-areas:
+    "galerie-h2 galerie-h2 galerie-h2 galerie-h2"
+    "img1 img2 img3 img4"
+    "img5 img6 img7 img8"
+}
+
+#index-portfolio .portfolio-img {
+    width: 100%;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    
+}
+
+.portfolio-img div {
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    font-weight: bolder;
+    font-size: larger;
+    
+}
+
+.portfolio-img div:hover {
+    opacity: 0.8;
+    transition: all ease-in-out;
+}
+
+#index-portfolio .portfolio1 {
+    grid-area: img1;
+    background-image: url("image/Portfolio/cover\ Randomiser.png");
+}
+
+#index-portfolio .portfolio2 {
+    grid-area: img2;
+    background-image: url("image/Portfolio/cover\ clicker.png");
+}

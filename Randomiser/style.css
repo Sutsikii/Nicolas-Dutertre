@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap');
+
+
+
+* {
+    display: flex;
+    margin:0;
+    padding:0;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5px;
+    margin : 5px;
+    font-family: 'Prompt', sans-serif;
+}
+
+body {
+    height: 40vh;
+    background-color: blue;
+}
+
+Hero btn-1 {
+    border-radius: 5px;
+}
+

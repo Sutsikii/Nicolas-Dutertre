@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="style.css">
+    <title></title>
+  </head>
+  <body>
+      <div class="Hero">
+      <h1>Randomiser</h1>
+    <label for="lane-choice">Choisis ta lane</label>
+    <select name="lane" id="lane-choice" onchange="getSelectValue();">
+    <option value="">  Lane </option>
+    <option value="top">Top</option>
+    <option value="jungle">Jungle</option>
+    <option value="mid">Mid</option>
+    <option value="adc">Adc</option>
+    <option value="support">Support</option>
+    </select>
+    <button id="validation"> Valider </button>
+    <span id="champion-choisis"></span>
+    </div>
+
+    <script src="randomiser.js"></script>
+  </body>
+</html>
